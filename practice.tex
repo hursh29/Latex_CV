@@ -1,0 +1,338 @@
+%-------------------------
+% Resume in Latex
+% Author : Arkadeep Das, Manas Daruka, Ayush Sharma, Abhinav Gupta
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{:\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1},\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Hursh} % Your Name
+\newcommand{\course}{B.Tech - Mechanical Engineering} % Your Course
+\newcommand{\roll}{170103029} % Your Roll No.
+\newcommand{\phone}{8136069748} % Your Phone Number
+\newcommand{\emaila}{hursh170103029@iitg.ac.in} %Email 1
+\newcommand{\emailb}{hurshs0609@gmail.com} %Email 2
+\newcommand{\github}{hursh29} %Github
+\newcommand{\website}{https://www.github.com/hursh29} %Website
+\newcommand{\linkedin}{hursh29} %linkedin
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+\parbox{2.35cm}{%
+
+\includegraphics[width=2cm,clip]{iitg_logo.jpg}
+
+}\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r}
+  \textbf{\LARGE \name} & +91-\phone\\
+  {Roll No.:\roll} & \href{mailto:\emaila}{\emaila} \\
+  \course &  \href{mailto:\emailb}{\emailb}\\
+  {Minor in Electronic and Electrical Engineering} &  \href{https://github.com/\github}{github.com/hursh29}  \\
+  {Indian Institute Of Technology, Guwahati} & \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
+\end{tabularx}
+}
+\vspace{-4mm}
+%-----------EDUCATION-----------------
+% \section{Education}
+%   \resumeSubHeadingListStart
+%     \resumeSubheading
+%       {Indian Institute of Technology Guwahati}{Guwahati, India}
+%       {Bachelor of Technology in Mathematics and Computing ;  GPA: 8.10}{July. 2015 -- July. 2019 (Expected)}
+%     \resumeSubheading
+%       {Burdwan Model School}{Burdwan, W.B}
+%       {Central Board of Secondary Education (Class XII);  Percentage: 96.60}{March. 2015}
+%   \resumeSubHeadingListEnd\vspace{-3mm}
+\section{Education}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+% \renewcommand{\arraystretch}{1.1} % Default value: 1
+\small{\begin{tabularx}
+{\dimexpr\textwidth-3mm\relax}{|c|C|c|c|}
+  \hline
+  \textbf{Degree/Certificate } & \textbf{Institute/Board} & \textbf{CGPA/Percentage} & \textbf{Year}\\
+  \hline
+  B.Tech. Major & Indian Institute of Technology, Guwahati & 8.17 (Current) & 2017-Present\\ 
+  \hline
+  Senior Secondary & Jamia Millia Islamia Board & 85.6\% & 2016 \\
+  \hline
+  Secondary & CBSE Board & 9.0 & 2014 \\
+  \hline
+\end{tabularx}}
+\vspace{-4mm}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Samsung Research \& Development  Institute}{Noida, India}
+      {Software Development Intern}{May 2020 - Jul. 2020}
+      \resumeItemListStart
+    \item {Developed a deep learning model for \textbf{automatic detection of undesirable objects} from an image using image segmentation and different Machine Learning techniques.}
+    \item {Built a web app using Google Firebase for collecting annotations from various users which was later used to generate training data for assessing model.}
+    % \item {More work done } .....
+    \resumeItemListEnd
+    
+    % \resumeSubheading
+    %   {Company A}{Bengaluru, India}
+    %   {API Developer \& Machine Learning Intern}{May. 2018 - Jul. 2018}
+    %   \resumeItemListStart
+    % \item {XXXXXXXXXXXXXXX}
+    %     \item {YYYYYYYYYYYYYYYYYY}
+    % \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+    
+    \resumeProject
+      {Project Name} %Project Name
+      {Dr Rajeev  Tiwari, Associate Professor, Dept. of Mechanical, IIT Guwahati} %Project Name, Location Name
+      {Nov. 2018 - Dec. 2018} %Event Dates
+      {\href{Link to github}{Github}} %Website
+      \resumeItemListStart
+        \item {Project Work Done 1}
+        \item {Project Work Done 2}
+    \resumeItemListEnd
+    \vspace{-2.5mm}
+    \resumeProject
+      {Sudoku Solver} %Project Name
+      {Personal Project} %Project Name, Location Name
+      {Nov. 2018 - Dec. 2018} %Event Dates
+      {\href{Link to github}{Github}} %Website
+      \resumeItemListStart
+        \item {Developed a Convolutional Neural Network using Keras and TensorFlow backend to recognize digits present in a sudoku grid.}
+        \item {Used various mathematical functions from OpenCV to locate the grid and finally implemented the backtracking algorithm after digit extraction for solving the sudoku.}
+    \resumeItemListEnd
+    \vspace{-2.5mm}
+    \resumeProject
+      {Codeforces Crawler} %Project Name
+      {Personal Project} %Project Name, Location Name
+      {Nov. 2018 - Dec. 2018} %Event Dates
+      {\href{Link to github}{Github}} %Website
+      \resumeItemListStart
+        \item {Developed a Django powered Web App to analyze and visualize user's performance on Codeforces.}
+        \item {Enhanced website performance by retrieving data from the database and reducing parallel HTTP requests to Codeforces API.}
+    \resumeItemListEnd
+    \vspace{-2.5mm}
+    \resumeProject
+      {Crunch Spot} %Project Name
+      {Personal Project} %Project Name, Location Name
+      {Nov. 2018 - Dec. 2018} %Event Dates
+      {\href{Link to github}{Github}} %Website
+      \resumeItemListStart
+        \item {Built a NodeJS Blog Reading web app that implements Restful routing using ExpressJS. Users can view, add and edit their blogs after signing up.}
+        \item {Used PassportJS as the authentication middleware and mongoose for MongoDB object modelling.}
+    \resumeItemListEnd
+    \vspace{-2.5mm}
+    
+    % \resumeProject
+    %   {Project Name 2}
+    %   {6th Inter IIT TechMeet, IIT Madras}{Dec. 2017 - Jan. 2018}{\href{Links to Reports}{Reports}}
+    %   \resumeItemListStart
+    % \item {Work DOne 1}
+    %     \item {Work Done 2}
+    % \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-6.5mm}
+
+
+\section{Technical Skills }
+ \resumeHeadingSkillStart
+  \resumeSubItem{Programming Languages} % Category
+    { C/C++, Python, Javascript}
+ \resumeSubItem{Frameworks} % Category
+    { Django, NodeJS, Flask} % Skills
+    
+ \resumeSubItem{Database Technologies} % Category
+    { mySQL, MongoDB*} % Skills
+    
+ \resumeSubItem{Miscellaneous} % Category
+    { Git, Firebase*} % Skills
+ \resumeSubItem{Operating Systems} % Category
+    { Windows, Linux*} % Skills
+    
+%  \resumeSubItem{Tools/Frameworks} % Category
+%     {Keras, Tensorflow, Pytorch*, ROS, OpenCV}
+%  \resumeSubItem{Operating Systems}
+%  {Windows, Linux*} 
+\hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
+ \resumeHeadingSkillEnd
+\vspace{-7.5mm}
+\section{Key courses taken}
+\resumeHeadingSkillStart
+ 
+\resumeSubItem{Computer Science}
+ {Data Structures and Algorithms, Operating Systems,Databases, Introduction to Computing}
+\resumeSubItem{Machine Learning}
+{ Introduction to Machine Learning, Deep Learning and Neural Networks}
+\resumeSubItem{Mathematics} % Category
+    { Multivariabale Calculus, Ordinary \& Partial Differntial Equations } 
+%  \resumeSubItem{Electrical and Electronics} % Category
+%     {Advanced Control Systems, Digital Systems, Microprocessors} % Skills
+ \resumeHeadingSkillEnd
+
+\vspace{-2.5mm}
+\section{Achievements}
+\vspace{-0.2mm}
+\resumeSubHeadingListStart
+\resumePOR{Competitive programming} % Award
+    {Achieved highest Rating of 1675(Expert) on Codeforces(Handle: masaow).} % Event
+    { } %Event Year
+\resumePOR{JEE Advanced(2017)} % Award
+    { Secured All India Rank 5617 among 0.2 million candidates appearing for the tests.} % Event
+    { } %Event Year
+\resumeSubHeadingListEnd
+% \vspace{-2mm}
+\vspace{-6.5mm}
+\section{Extracuriculars \& Positions of Responsibility}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumePOR{} % Position
+    {Cleared Google Code Jam Qualification Round 2019 and 2020.} %Club,Event
+    { } %Tenure Period
+\resumePOR{} % Position
+    {Attended Publicis Sapient's workshop on Personality development.} %Club,Event
+    { } %Tenure Period
+\resumePOR{} % Position
+    {Secured overall second Position in Kho-Kho in the Inter Hostel Sports Competition-Spardha representing Dihing Hostel, IIT Guwahati.} %Club,Event
+    { } %Tenure Period
+\resumePOR{} % Position
+    {Participated in Inter Hostel Dance Competition- Manthan representing Dihing Hostel, IIT Guwahati} %Club,Event
+    { } %Tenure Period
+\resumePOR{} % Position
+    {Mentored freshmen year students in RC Plane Project in Kriti, the inter-hostel Technical Competiton.} %Club,Event
+    { } %Tenure Period
+\resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+\hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
+
+%-------------------------------------------
+\end{document}
