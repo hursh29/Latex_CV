@@ -7,6 +7,7 @@
 %---- Required Packages and Functions ----
 
 \documentclass[a4paper,11pt]{article}
+\usepackage{amssymb}
 \usepackage{latexsym}
 \usepackage{xcolor}
 \usepackage{float}
@@ -150,8 +151,8 @@
   \textbf{\LARGE \name} & +91-\phone\\
   {Roll No.:\roll} & \href{mailto:\emaila}{\emaila} \\
   \course &  \href{mailto:\emailb}{\emailb}\\
-  {Minor in Electronic and Electrical Engineering} &  \href{https://github.com/\github}{github.com/hursh29}  \\
-  {Indian Institute Of Technology, Guwahati} & \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
+  {Minor in Electronics and Electrical Engineering} &  \href{https://github.com/\github}{github.com/hursh29}  \\
+  {Indian Institute Of Technology Guwahati} & \href{https://www.linkedin.com/in/\linkedin/}{linkedin.com/in/\linkedin}
 \end{tabularx}
 }
 \vspace{-4mm}
@@ -165,7 +166,7 @@
 %       {Burdwan Model School}{Burdwan, W.B}
 %       {Central Board of Secondary Education (Class XII);  Percentage: 96.60}{March. 2015}
 %   \resumeSubHeadingListEnd\vspace{-3mm}
-\section{Education}
+\section{\textbf{Education}}
 \setlength{\tabcolsep}{5pt} % Default value: 6pt
 % \renewcommand{\arraystretch}{1.1} % Default value: 1
 \small{\begin{tabularx}
@@ -180,18 +181,18 @@
   Secondary & CBSE Board & 9.0 & 2014 \\
   \hline
 \end{tabularx}}
-\vspace{-4mm}
-
+\vspace{-3.5mm}
+\vspace{1mm}
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{\textbf{Experience}}
   \resumeSubHeadingListStart
-
+  \vspace{-1mm}
     \resumeSubheading
-      {Samsung Research \& Development  Institute}{Noida, India}
-      {Software Development Intern}{May 2020 - Jul. 2020}
+      {Samsung Research Institute}{Noida, India}
+      {Summer Internship}{May 2020 - Jun. 2020}
       \resumeItemListStart
-    \item {Developed a deep learning model for \textbf{automatic detection of undesirable objects} from an image using image segmentation and different Machine Learning techniques.}
-    \item {Built a web app using Google Firebase for collecting annotations from various users which was later used to generate training data for assessing model.}
+    \item {Developed a Deep Learning Model for Detection of Distracting Objects from images by training on a Large Scale Dataset.}
+    \item {Conceptualized and Built a Firebase Web app for training data generation and Successfully integrated image inpainting model to edit and correct defects in the image.}
     % \item {More work done } .....
     \resumeItemListEnd
     
@@ -204,73 +205,70 @@
     % \resumeItemListEnd
       
   \resumeSubHeadingListEnd
-\vspace{-8.5mm}
+\vspace{-7mm}
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{\textbf{Projects}}
 \resumeSubHeadingListStart
-    
+    \vspace{-1mm}
     \resumeProject
-      {Project Name} %Project Name
-      {Dr Rajeev  Tiwari, Associate Professor, Dept. of Mechanical, IIT Guwahati} %Project Name, Location Name
-      {Nov. 2018 - Dec. 2018} %Event Dates
-      {\href{Link to github}{Github}} %Website
+      {Fault diagnosis of Centrifugal Pumps using Machine Learning} %Project Name
+      {Dr Rajeev Tiwari, Professor, Dept. of Mechanical Engineering, IIT Guwahati} %Project Name, Location Name
+      {Sep. 2020 - Ongoing} %Event Dates
+      {\href{Link to github}{Github link}} %Website
+      \vspace{1mm}
       \resumeItemListStart
-        \item {Project Work Done 1}
-        \item {Project Work Done 2}
+        \item {Employing Neural Networks for classifying data acquired from fault specific harmonic components like vibration signals and line current  through sensors attached to the centrifugal pump.}
+        \item {The proposed algorithm may be employed for condition based monitoring in industrial equipments reducing human engagement in real time fault detection and decision making.}
     \resumeItemListEnd
-    \vspace{-2.5mm}
-    \resumeProject
-      {Sudoku Solver} %Project Name
-      {Personal Project} %Project Name, Location Name
-      {Nov. 2018 - Dec. 2018} %Event Dates
-      {\href{Link to github}{Github}} %Website
-      \resumeItemListStart
-        \item {Developed a Convolutional Neural Network using Keras and TensorFlow backend to recognize digits present in a sudoku grid.}
-        \item {Used various mathematical functions from OpenCV to locate the grid and finally implemented the backtracking algorithm after digit extraction for solving the sudoku.}
-    \resumeItemListEnd
-    \vspace{-2.5mm}
+    \vspace{-1.5mm}
     \resumeProject
       {Codeforces Crawler} %Project Name
       {Personal Project} %Project Name, Location Name
-      {Nov. 2018 - Dec. 2018} %Event Dates
-      {\href{Link to github}{Github}} %Website
+      {Mar. 2020 - Apr. 2020} %Event Dates
+      {\href{Link to github}{Github link}} %Website
+      \vspace{1mm}
       \resumeItemListStart
-        \item {Developed a Django powered Web App to analyze and visualize user's performance on Codeforces.}
-        \item {Enhanced website performance by retrieving data from the database and reducing parallel HTTP requests to Codeforces API.}
+        \item {Developed a \textbf{Django} powered Web App to analyze and visualize user's performance on Codeforces.}
+        \item {Improved website performance  by minimizing redundant \textbf{HTTP requests} to Codeforces API which was acheived by pushing web scraped data onto the database using \textbf{beautiful soup}.}
     \resumeItemListEnd
-    \vspace{-2.5mm}
+    \vspace{-1.5mm}
+    \resumeProject
+      {Sudoku Solver} %Project Name
+      {Personal Project} %Project Name, Location Name
+      {Jul. 2020 - Aug. 2020} %Event Dates
+      {\href{Link to github}{Github link}} %Website
+      \vspace{1mm}
+      \resumeItemListStart
+        \item {Trained Digit Recognizer with Keras and Tensorflow using MNIST Dataset by implementing a \textbf{CNN} to identify the digits present in the sudoku puzzle.}
+        \item {
+        Extracted sudoku puzzle from the image using a collection of Image Processing techniques from OpenCV library and finally implemented the \textbf{backtracking algorithm} for solving the sudoku.}
+    \resumeItemListEnd
+   
+    \vspace{-1.5mm}
     \resumeProject
       {Crunch Spot} %Project Name
       {Personal Project} %Project Name, Location Name
-      {Nov. 2018 - Dec. 2018} %Event Dates
-      {\href{Link to github}{Github}} %Website
+      {Jul. 2019 - Sep. 2019} %Event Dates
+      {\href{Link to github}{Github link}} %Website
+      \vspace{1mm}
       \resumeItemListStart
-        \item {Built a NodeJS Blog Reading web app that implements Restful routing using ExpressJS. Users can view, add and edit their blogs after signing up.}
-        \item {Used PassportJS as the authentication middleware and mongoose for MongoDB object modelling.}
+        \item {Built a \textbf{NodeJS Blog Reading} web app that implements Restful routing using ExpressJS where Users can add, update and delete their blogs after signing up.}
+        \item {Used PassportJS as the \textbf{authentication middleware} and mongoose for MongoDB object modelling.}
     \resumeItemListEnd
-    \vspace{-2.5mm}
-    
-    % \resumeProject
-    %   {Project Name 2}
-    %   {6th Inter IIT TechMeet, IIT Madras}{Dec. 2017 - Jan. 2018}{\href{Links to Reports}{Reports}}
-    %   \resumeItemListStart
-    % \item {Work DOne 1}
-    %     \item {Work Done 2}
-    % \resumeItemListEnd
-      
+    \vspace{-1.5mm}
   \resumeSubHeadingListEnd
-\vspace{-6.5mm}
+\vspace{-5.5mm}
 
 
-\section{Technical Skills }
+\section{\textbf{Technical Skills} }
  \resumeHeadingSkillStart
   \resumeSubItem{Programming Languages} % Category
-    { C/C++, Python, Javascript}
+    { C++, Python, Javascript}
  \resumeSubItem{Frameworks} % Category
     { Django, NodeJS, Flask} % Skills
     
  \resumeSubItem{Database Technologies} % Category
-    { mySQL, MongoDB*} % Skills
+    { SQL} % Skills
     
  \resumeSubItem{Miscellaneous} % Category
     { Git, Firebase*} % Skills
@@ -278,60 +276,52 @@
     { Windows, Linux*} % Skills
     
 %  \resumeSubItem{Tools/Frameworks} % Category
-%     {Keras, Tensorflow, Pytorch*, ROS, OpenCV}
-%  \resumeSubItem{Operating Systems}
-%  {Windows, Linux*} 
+%     {Keras, Tensorflow, Pytorch*, ROS, OpenCV} 
 \hfill \textit{\footnotesize{* Elementary proficiency}} \hspace{3mm}
  \resumeHeadingSkillEnd
-\vspace{-7.5mm}
-\section{Key courses taken}
+\vspace{-6mm}
+\section{\textbf{Key courses taken}}
 \resumeHeadingSkillStart
  
-\resumeSubItem{Computer Science}
- {Data Structures and Algorithms, Operating Systems,Databases, Introduction to Computing}
-\resumeSubItem{Machine Learning}
-{ Introduction to Machine Learning, Deep Learning and Neural Networks}
-\resumeSubItem{Mathematics} % Category
-    { Multivariabale Calculus, Ordinary \& Partial Differntial Equations } 
-%  \resumeSubItem{Electrical and Electronics} % Category
-%     {Advanced Control Systems, Digital Systems, Microprocessors} % Skills
+ \resumeSubItem{Computer Science}
+ { Data Structure and Algorithms, Operating System, Databases, Introduction to Computing}  
+ \resumeSubItem{Machine Learning}
+ { Introduction to Machine Learning, Deep Learning and Neural Networks}
+ \resumeSubItem{Mathematics} % Category
+ { Advanced Calculus, Ordinary \& Partial Differential Equations }  
  \resumeHeadingSkillEnd
 
-\vspace{-2.5mm}
-\section{Achievements}
+\vspace{-1.5mm}
+\section{\textbf{Achievements}}
 \vspace{-0.2mm}
 \resumeSubHeadingListStart
 \resumePOR{Competitive programming} % Award
-    {Achieved highest Rating of 1675(Expert) on Codeforces(Handle: masaow).} % Event
+    { Achieved highest Rating of \textbf{1675(Expert)} on Codeforces (Handle: masaow) and \\ \textbf{1816} on Leetcode(Handle: hurshs0609).} % Event
     { } %Event Year
+\resumePOR{Google Hash Code(2020)} % Award
+{ Secured Global Rank of \textbf{1327} amongst 10724 participating teams.} % Event
+{ } %Event Year
 \resumePOR{JEE Advanced(2017)} % Award
-    { Secured All India Rank 5617 among 0.2 million candidates appearing for the tests.} % Event
+    { Secured All India Rank in top \textbf{3\%} among 0.2 million candidates appearing for the test.} % Event
     { } %Event Year
 \resumeSubHeadingListEnd
 % \vspace{-2mm}
-\vspace{-6.5mm}
-\section{Extracuriculars \& Positions of Responsibility}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
-\resumePOR{} % Position
-    {Cleared Google Code Jam Qualification Round 2019 and 2020.} %Club,Event
-    { } %Tenure Period
-\resumePOR{} % Position
-    {Attended Publicis Sapient's workshop on Personality development.} %Club,Event
-    { } %Tenure Period
-\resumePOR{} % Position
-    {Secured overall second Position in Kho-Kho in the Inter Hostel Sports Competition-Spardha representing Dihing Hostel, IIT Guwahati.} %Club,Event
-    { } %Tenure Period
-\resumePOR{} % Position
-    {Participated in Inter Hostel Dance Competition- Manthan representing Dihing Hostel, IIT Guwahati} %Club,Event
-    { } %Tenure Period
-\resumePOR{} % Position
-    {Mentored freshmen year students in RC Plane Project in Kriti, the inter-hostel Technical Competiton.} %Club,Event
-    { } %Tenure Period
-\resumeSubHeadingListEnd
+\vspace{-5.5mm}
+\section{\textbf{Extracurriculars}}
+\vspace{1mm}
+\begin{itemize}[leftmargin=1em]  
+    \item Cleared \textbf{Google Code Jam} Qualification Round 2019 and 2020.
+\end{itemize} 
+\vspace{-5mm}
+\begin{itemize}[leftmargin=1em]  
+    \item Secured \textbf{2nd} Position in Kho-Kho in \textbf{Spardha}, the Inter-Hostel Sports Competition, IIT Guwahati. 
+\end{itemize}
+\vspace{-5mm}
+
+\begin{itemize}[leftmargin=1em]  
+    \item Mentored freshmen year students in \textbf{RC Plane} project in \textbf{Kriti}, the inter-hostel Technical Competition, IIT Guwahati.
+\end{itemize}
 \vspace{-4mm}
-
-
 \hspace*{-5mm}\rule{1.035\textwidth}{0.1mm}
 
 %-------------------------------------------
